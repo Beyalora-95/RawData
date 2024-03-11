@@ -1,0 +1,21 @@
+:root {
+  /* Light theme colors */
+  --body-bgc-light: #fff;
+  --body-fgc-light: #000;
+
+  /* Dark theme colors */
+  --body-bgc-dark: #000;
+  --body-fgc-dark: #fff;
+
+  /* Initial values */
+  --body-bgc: var(--body-bgc-light);
+  --body-fgc: var(--body-fgc-light);
+}
+
+/* Apply dark theme when prefers-color-scheme is dark */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bgc: var(--body-bgc-dark);
+    --body-fgc: var(--body-fgc-dark);
+  }
+}
